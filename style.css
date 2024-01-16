@@ -3,3 +3,257 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-family: Mulish;
+    font-size: 1.3vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7vh 0;
+}
+
+.header-logo-name{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-name h1{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.header-logo-name img{
+    padding: 0 1.3vw 0 0;
+    width: 5.2vw;
+    height: 7.2vh;
+}
+
+span{
+    color: #FF5400;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+     padding: 0 0 0 4vw;
+     list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+nav ul li a:hover{
+    color: #FF5400;
+}
+
+.explore-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#131318, #13131800),url('Group\ 13\ \(1\)\ \(1\).png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 76vh;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.explore-travel-input-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    width: 57vw;
+    height: 11vh;
+    border-radius: 8px;
+    background-color:#FFFFFF4D;
+}
+
+.explore-travel-text h1{
+    text-align: center;
+    padding: 6.5vh 0;
+    font-size: 3.6rem;
+    color: white;
+    font-weight: 800;
+    line-height: 80px;
+}
+
+.similar-p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.explore-travel-text p{
+    padding: 0 0 6.5vh 0;
+    color: white;
+}
+
+.explore-travel-input-btn input, select{
+    width: 12.5vw;
+    height: 7.5vh;
+    font-size: 0.9rem;
+    padding: 0 0 0 1vw;
+    font-weight: 400;
+    border-radius: 8px;
+    color: #13131880;
+}
+
+.explore-travel-input-btn input{
+    border: 1px solid white;
+}
+
+.similar-btn{
+    background-color: #FF5400;
+    color: white;
+    height: 7.5vh;
+    width: 12.5vw;
+    border-radius: 8px;
+    border: 1px solid  #FF5400;
+}
+
+.explore-travel-input-btn button{
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.popular-tour-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popular-tour-text{
+    margin: 7.2vh 0;
+    width: 39%;
+    height: 87.5vh;
+}
+
+.popular-tour-img{
+    margin: 7.2vh 0;
+    width: 39%;
+    height: 87.5vh;
+    background-image: url(Rectangle\ 4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.popular-tour-text h1{
+    font-size: 2.3rem;
+    font-weight: 800;
+    padding: 0 0 6.5vh 0;
+}
+
+.popular-tour-text ul{
+   padding: 2vh 0 0 2vw;
+}
+
+.popular-tour-text li{
+    padding: 1.5vh 0;
+}
+
+.popular-tour-text .second-p{
+    padding: 0 0 6.5vh 0;
+}
+
+.popular-tour-text button{
+    font-size: 1.1rem;
+}
+
+
+
+
+@media screen and (max-width:576px){
+    header, nav{    
+        margin: 3vh 0 ;
+    }
+    .header-logo-name h1{
+        font-size: 2.5rem;
+    }
+    .header-logo-name img{
+        height: 5vh;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+   .explore-section{
+    justify-content: flex-start;
+    width: 92%;
+    height: 75vh;
+   }
+   .explore-travel-text h1{
+    padding: 1vh 0;
+    font-size: 4rem;
+    line-height: 60px;
+   }
+   .explore-travel-text p{
+    font-size: 1.4rem;
+    line-height: 17px;
+    padding: 0 0 2.5vh 0;
+   }
+   .explore-travel-input-btn{
+    width: 40vw;
+    height:44vh;
+    flex-direction: column;
+    gap: 2.5vh;
+   }
+   .explore-travel-input-btn input, select{
+    width: 34vw;
+    height: 8vh;
+    font-size: 1.6rem;
+   }
+   .explore-travel-input-btn button{
+    width: 34vw;
+    height: 8vh;
+    font-size: 1.6rem;
+   }
+   .popular-tour-section{
+    flex-direction: column;
+    align-items: center;
+   }
+   .popular-tour-text{
+    width: 92%;
+    height: 96vh;
+   }
+   .popular-tour-text h1{
+    font-size: 3.5rem;
+    padding: 0 0 5vh 0;
+   }
+   .popular-tour-text ul{
+    padding:  1vh 0 1vh 4vw;
+   }
+   .popular-tour-text li{
+    font-size: 2.3rem;
+    padding: 2.2vh 0;
+   }
+   .popular-tour-text p{
+    font-size: 2.3rem;
+   }
+   .popular-tour-text button{
+    width: 24vw;
+    height: 9vh;
+    font-size: 2.5rem;
+   }
+   .popular-tour-img{
+    margin: 0.5vh 0;
+    width: 92%;
+    height: 65vh;
+   }
+   
+}
